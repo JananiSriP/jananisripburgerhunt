@@ -1,0 +1,40 @@
+/* pop1.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .search-container {
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 80%;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #results {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #results li {
+    background-color:rgb(241, 232, 232);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #1f1d1d;
+    border-radius: 4px;
+  }
+  
+  video {
+    max-width: 100%;
+    display: block;
+    margin-top: 20px;
+  }

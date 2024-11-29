@@ -1,0 +1,131 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<header>
+        
+    <div class="logo">
+      <img src="iconlogo.png" alt="Burger Hut Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="koks1.html">
+            <h3>Home</h3>
+        </a></li>
+          <li><a href="About.html">
+              <h3>About</h3>
+          </a></li>
+          <li><a href="Menu.html">
+              <h3>Menu</h3>
+          </a></li>
+          <li><a href="contact.html">
+              <h3>Contact</h3>
+          </a></li>
+          <li><a href="Sign.html">
+              <h3>Sign up</h3>
+          </a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <section class="menu.html">
+    <h2>Our Menu</h2>
+    <body>
+      <div class="search-container">
+        
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Search for example pizzas, sides, or deals...">
+          <button onclick="searchMenu()">Search</button>
+        </div>
+        <ul id="results"></ul>
+      </div>
+    
+      <script src="script1.js"></script>
+    </body>
+    
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="burger1 (1).jpg" alt="Burger 1">
+        <h3>Classic Cheeseburger</h3>
+        <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served with a side of crispy fries.</p>
+        <a href="#menu" class="btnm">₹200</a>
+       
+        <a href="#menu" class="btnms">Add to cart</a>
+        <a href="#menu" class="btnmss">Buy now</a>
+      </div>
+      <div class="menu-item">
+        <img src="burger2.jpg" alt="Burger 2">
+        <h3>Veggie Delight</h3>
+        <p>A delicious veggie patty made from a blend of fresh vegetables and spices. Topped with avocado, sprouts, and tangy mayo. Served with a side of sweet potato fries.</p>
+        <a href="#menu" class="btnm">₹300</a>
+        <a href="#menu" class="btnms">Add to cart</a>
+        <a href="#menu" class="btnmss">Buy now</a>
+        
+      </div>
+      <div class="menu-item">
+        <img src="burger3.jpg" alt="Burger 3">
+        <h3>Spicy BBQ Burger</h3>
+        <p>A fiery burger packed with flavor! Grilled chicken breast smothered in spicy BBQ sauce, topped with jalapenos, crispy onion rings, and chipotle mayo. Served with a side of coleslaw.</p>
+        <a href="#menu" class="btnm">₹400</a>
+       
+        <a href="#menu" class="btnms">Add to cart</a>
+        <a href="#menu" class="btnmss">Buy now</a>
+    
+      </div>
+    </div>
+  </section>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart Example</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Auto-playing Video</title>
+      <link rel="stylesheet" href="search1.css">
+  </head>
+  <body>
+    
+    <!-- Your JavaScript code, placed at the bottom for better performance -->
+    <script>
+      const menuItems = [
+        "Pepperoni Pizza",
+        "Margherita Pizza",
+        "BBQ Chicken Pizza",
+        "Garlic Bread",
+        "Cheesy Sticks",
+        "Family Meal Deal",
+        "Chocolate Lava Cake",
+        "Coca-Cola"
+      ];
+  
+      function searchMenu() {
+        const query = document.getElementById("search").value.toLowerCase();
+        const results = document.getElementById("results");
+        results.innerHTML = ""; // Clear previous results
+  
+        // Filter menu items based on the search query
+        const filteredItems = menuItems.filter(item => item.toLowerCase().includes(query));
+  
+        // Display filtered items or "No items found" message
+        if (filteredItems.length > 0) {
+          filteredItems.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            results.appendChild(li);
+          });
+        } else {
+          results.innerHTML = "<li>No items found</li>";
+        }
+      }
+    </script>
+  
+    <!-- External JavaScript file (pop2.js), if you need it -->
+    <script src="search2.js"></script>
+  </body>
+  </html>  
+
+ 
